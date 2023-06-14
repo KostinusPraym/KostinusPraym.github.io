@@ -1,0 +1,86 @@
+.games {
+  background-image: url(../../public/images/games.jpg);
+  background-size: cover;
+  padding: 50px 20px;
+  color: white;
+
+  .content {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 72px;
+    margin-bottom: 55px;
+
+    &::first-letter {
+      color: #ff0101;
+    }
+  }
+
+  .infoBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+    .infoArticle {
+      margin: 0 0 40px 60px;
+
+      article {
+        max-width: 580px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .gamesBlock {
+      display: flex;
+      align-self: center;
+      max-width: 1200px;
+      height: 700px;
+      margin-bottom: 40px;
+      color: aliceblue;
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: flex-end;
+      width: 260px;
+      height: 66px;
+      background-color: #fb2222;
+      border-radius: 12px;
+      color: aliceblue;
+
+      &:hover {
+        background-color: #e11c1c;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .games {
+    padding: 20px;
+
+    .title {
+      margin-bottom: 20px;
+      font-size: 35px;
+    }
+
+    .infoBlock {
+      .gamesBlock {
+        flex-direction: column;
+        height: 2000px;
+        align-items: center;
+      }
+
+      .infoArticle {
+        margin: 0 0 20px 0;
+      }
+    }
+  }
+}

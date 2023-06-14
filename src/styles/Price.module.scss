@@ -1,0 +1,129 @@
+.price {
+  background-image: url(../../public/images/price.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 40px;
+  color: white;
+}
+.content {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  p {
+    max-width: 1300px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 72px;
+    margin-bottom: 55px;
+
+    &::first-letter {
+      color: #ff0101;
+    }
+  }
+}
+
+.wrap {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+
+  .info {
+    display: flex;
+    gap: 20px;
+
+    .priceBlock {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+      align-items: center;
+      padding: 20px;
+      max-width: 452px;
+      background: rgba(193, 180, 180, 0.24);
+      box-shadow: 2px 2px 25px #00000053;
+      border-radius: 24px;
+
+      .priceTitle {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        font-weight: 700;
+        border-bottom: 3px solid white;
+      }
+      .priceOptions {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+      }
+      .priceElement {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      }
+    }
+
+    .descriptionsBlock {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      max-width: 1075px;
+      padding: 20px;
+      background: rgba(193, 180, 180, 0.24);
+      box-shadow: 2px 2px 25px #00000053;
+      border-radius: 24px;
+
+      .descriptionsTitle {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        font-weight: 700;
+        border-bottom: 3px solid white;
+      }
+
+      .param {
+        display: flex;
+        column-gap: 20px;
+
+        .paramWrapper {
+          display: flex;
+          flex-direction: column;
+          row-gap: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .price {
+    padding: 20px;
+
+    .wrap {
+      padding: 0;
+    }
+
+    .title {
+      margin-bottom: 20px;
+      font-size: 35px;
+    }
+  }
+
+  .info {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .descriptionsBlock {
+    
+    .param {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+}

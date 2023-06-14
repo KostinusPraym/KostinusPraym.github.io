@@ -1,0 +1,38 @@
+.slider {
+  height: 100%;
+  position: relative;
+
+  .buttonLeft {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 50%;
+    -webkit-tap-highlight-color: transparent;
+
+  }
+
+  .buttonRight {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 50%;
+    -webkit-tap-highlight-color: transparent;
+
+  }
+
+  .slide {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+}

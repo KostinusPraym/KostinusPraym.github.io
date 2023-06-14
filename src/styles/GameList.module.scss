@@ -1,0 +1,106 @@
+.gamesList {
+  background-image: url(../../public/images/game-list.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px 20px 40px;
+  color: white;
+
+  .content {
+    max-width: 1640px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 72px;
+    margin-bottom: 55px;
+
+    &::first-letter {
+      color: #b471a4;
+    }
+  }
+
+  article {
+    max-width: 880px;
+    margin-bottom: 50px;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 30px;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 320px;
+    height: 580px;
+    padding: 0px 20px 20px;
+    background-color: rgba(0, 0, 0, 0.506);
+    box-shadow: 5px 5px 25px #000000;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 5px 5px 30px #f1f0f02c;
+    }
+
+    img {
+      width: 320px;
+      height: 300px;
+      margin-bottom: 20px;
+      object-fit: cover;
+      object-position: 0% 20%;
+    }
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    p {
+      text-align: left;
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+}
+
+.btnBack {
+  position: relative;
+  margin-top: 70px;
+  display: block;
+  text-align: right;
+
+  .link {
+    background-color: rgba(255, 255, 255, 0.231);
+    border-radius: 24px;
+    padding: 20px 40px;
+    -webkit-tap-highlight-color: transparent;
+
+    &:hover {
+      background-color: #00000028;
+    }
+  }
+
+  img {
+    position: absolute;
+    top: 5px;
+    right: 114px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cards {
+    .card {
+      width: 290px;
+      
+      img {
+        width: 290px;
+      }
+    }
+  }
+}

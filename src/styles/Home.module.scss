@@ -1,0 +1,46 @@
+.firstImage {
+  background-image: url(../../public/images/home.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  box-shadow: inset 0px -33px 74px #2a2b30;
+  padding: 110px 20px 0;
+}
+
+.content {
+  max-width: 1560px;
+  margin: 0 auto;
+}
+
+.title {
+  display: inline-block;
+  color: rgba(249, 249, 249, 0.803);
+  max-width: 490px;
+  text-align: right;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  .title {
+    max-width: 380px;
+    font-size: 48px;
+    line-height: 52px;
+  }
+
+}
+
+@media only screen and (max-width: 440px) {
+  .title {
+    font-size: 33px;
+    line-height: 46px;
+    padding: 120px 0px;
+    text-align: center;
+  }
+
+  .firstImage {
+    padding: 30px 20px 0;
+  }
+}
