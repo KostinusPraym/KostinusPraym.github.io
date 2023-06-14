@@ -1,8 +1,8 @@
 {
-  "name": "vr-buda",
+  "name": "vr-store",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kostinuspraym.github.io/vr-store/",
+  "homepage": "https://github.com/KostinusPraym/KostinusPraym.github.io.git",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
