@@ -1,2 +1,2 @@
-Сайт размещен по адресу 
+# Vr-store
 `https://vr-buda.netlify.app`
